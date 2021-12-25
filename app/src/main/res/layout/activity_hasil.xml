@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="HASIL INPUT DATA"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif"/>
+
+            <RelativeLayout
+                android:layout_width="748dp"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:elevation="1dp"
+                android:paddingHorizontal="28dp"
+                android:paddingVertical="35dp"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/judultext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemesan\t\t\t\t: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judultext"
+                    android:layout_marginTop="12dp"
+                    android:text="Judul Film\t\t\t\t\t\t\t\t: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_pmjm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_judul"
+                    android:layout_marginTop="12dp"
+                    android:text="Lama Peminjaman\t\t: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_pmjm"
+                    android:layout_marginTop="12dp"
+                    android:text="Genre\t\t\t\t\t\t\t\t\t\t\t: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genre"
+                    android:layout_marginTop="12dp"
+                    android:text="Rating\t\t\t\t\t\t\t\t\t\t\t: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hasil_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/judultext"
+                    android:text="nama"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hasil_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hasil_nama"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/txt_judul"
+                    android:text="judul"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hasil_pmjm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hasil_judul"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/txt_pmjm"
+                    android:text="peminjaman"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hasil_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hasil_pmjm"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/genre"
+                    android:text="genre"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hasil_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hasil_genre"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/genre"
+                    android:text="rating"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

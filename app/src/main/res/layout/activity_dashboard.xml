@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="TAMBAH DATA SEWA FILM"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="16dp"
+                android:background="@color/cardview_light_background"
+                android:elevation="1dp"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/judultext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemesan"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/ed_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Film"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/ed_judul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@color/black"/>
+
+                 <TextView
+                     android:id="@+id/pmjm"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Lama Peminjaman"
+                     android:textSize="18sp"
+                     android:layout_marginTop="8dp"
+                     android:textColor="@color/black"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_pmjm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Minggu"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:id="@+id/rb_pmjm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="2 Minggu"
+                        android:textColor="@color/black"/>
+                    <RadioButton
+                        android:id="@+id/rb_pmjm3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="1 Bulan"
+                        android:textColor="@color/black"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cb_horor"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="Horor"
+                        android:textColor="@color/black"/>
+                    <CheckBox
+                        android:id="@+id/cb_animasi"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="Animasi"
+                        android:layout_toRightOf="@+id/cb_horor"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+                    <CheckBox
+                        android:id="@+id/cb_romantis"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="Romantis"
+                        android:layout_toRightOf="@+id/cb_animasi"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textrating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"/>
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    style="@style/Widget.AppCompat.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:max="100"
+                    android:backgroundTint="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_ptrate"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:hint="0/100"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_input"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:onClick="inputData"
+                    android:text="INPUT"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
